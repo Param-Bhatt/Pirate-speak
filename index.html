@@ -4,19 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>banana speak</title>
+    <title>Pirate speak</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <h1> talk bananaaaa</h1>
-    <textarea id="txt-input"
-        placeholder="put your sentence in English here and we will convert it to banana"></textarea>
-    <button id="btn-translate">Translate</button>
+    <h1>Pirate Speak</h1>
+            
+    <div class="row">
+        <div class="column">
+            <div style="font-size: larger;">Input goes here 👇</div>
+            <textarea id="txt-input"
+                placeholder="Put your sentence in English here and we will convert it to pirate speak"></textarea>
+            <button id="btn-translate">Translate</button>
+            <div class="svg-human">
+                <img src="SVG/graduate-student-with-graduation-cap-toga-and-tie.svg">
+            </div>
+        </div>
+        <div class="column">
+            <div style="font-size: larger;"> Output will come here 👇</div>
+            <div id="output"></div>
+            <div class="svg-minion">
+                <img src="SVG//laurent-drapeau-pirate.svg">
+            </div>
+        </div>
 
-    <div style="font-size: larger;"> Output will come here 👇</div>
-    <div id="output"></div>
+    </div>
     <script src="app.js" type="text/javascript"></script>
+
 </body>
 
 </html>

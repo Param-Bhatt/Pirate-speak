@@ -3,7 +3,7 @@ var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json"
+var serverURL = "https://api.funtranslations.com/translate/pirate.json"
 
 function getTranslationURL(input) {
     return serverURL + "?" + "text=" + input
@@ -17,7 +17,6 @@ function errorHandler(error) {
 
 function clickHandler() {
     var inputText = txtInput.value; // taking input
-
     // calling server for processing
     fetch(getTranslationURL(inputText))
         .then(response => response.json())
@@ -27,5 +26,6 @@ function clickHandler() {
            })
         .catch(errorHandler)
 };
+
 
 btnTranslate.addEventListener("click", clickHandler)
